@@ -1,0 +1,1 @@
+Java parser syntax: no syntax errors; javac exit=1 because Android SDK classes are unavailable.

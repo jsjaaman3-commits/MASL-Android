@@ -1,0 +1,10 @@
+masl 0.1;
+
+model LexerSmoke {
+    clock core = 1 GHz;
+    queue output: Job {
+        capacity = 8;
+        discipline = fifo;
+        overflow = block;
+    }
+}

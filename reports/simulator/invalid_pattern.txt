@@ -1,0 +1,2 @@
+memory pattern must be coalesced, strided or random
+invalid_pattern_exit=2

@@ -1,0 +1,101 @@
+name: Build MASL Studio Android APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["main", "masl-android-build"]
+    paths:
+      - "android/**"
+      - "src/**"
+      - "include/**"
+      - "CMakeLists.txt"
+      - "cmake/**"
+      - "tests/**"
+      - "docs/**"
+      - "README.md"
+      - ".github/workflows/android-apk.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: masl-android-apk-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-android-arm64:
+    name: Build and validate Android ARM64 APK
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Set up Gradle 9.9.2
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: "9.9.2"
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install Android build components
+        shell: bash
+        run: |
+          set -euo pipefail
+          yes | sdkmanager --licenses >/dev/null
+          sdkmanager \
+            "platform-tools" \
+            "platforms;android-36" \
+            "build-tools;36.0.0" \
+            "ndk;30.0.16248370" \
+            "cmake;3.22.1"
+
+      - name: Build and test portable MASL core
+        shell: bash
+        run: |
+          set -euo pipefail
+          cmake -S . -B build-ci -G Ninja \
+            -DCMAKE_BUILD_TYPE=Release \
+            -DMASL_BUILD_TESTS=ON \
+            -DMASL_ENABLE_WARNINGS_AS_ERRORS=ON
+          cmake --build build-ci --parallel 4
+          ctest --test-dir build-ci --output-on-failure
+
+      - name: Build installable debug APK (ARM64 only)
+        shell: bash
+        run: |
+          set -euo pipefail
+          gradle --no-daemon --stacktrace -p android :app:assembleDebug
+
+      - name: Verify APK signature, package and native ABI
+        shell: bash
+        run: |
+          set -euo pipefail
+          APK="android/app/build/outputs/apk/debug/app-debug.apk"
+          BUILD_TOOLS="$ANDROID_HOME/build-tools/36.0.0"
+          test -s "$APK"
+          "$BUILD_TOOLS/apksigner" verify --verbose "$APK"
+          "$BUILD_TOOLS/aapt" dump badging "$APK" | tee apk-badging.txt
+          grep -F "package: name='com.mahdi.masl.debug'" apk-badging.txt
+          unzip -Z1 "$APK" | grep -Fx 'lib/arm64-v8a/libmasl_jni.so'
+          unzip -p "$APK" lib/arm64-v8a/libmasl_jni.so > /tmp/libmasl_jni.so
+          readelf -h /tmp/libmasl_jni.so | grep -F 'AArch64'
+          sha256sum "$APK" | tee apk-sha256.txt
+
+      - name: Upload installable APK and verification data
+        uses: actions/upload-artifact@v4
+        with:
+          name: MASL-Studio-0.10.0-Android-ARM64-debug
+          path: |
+            android/app/build/outputs/apk/debug/app-debug.apk
+            apk-badging.txt
+            apk-sha256.txt
+          if-no-files-found: error
+          retention-days: 30

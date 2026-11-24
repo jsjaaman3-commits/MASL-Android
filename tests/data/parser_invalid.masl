@@ -1,0 +1,4 @@
+masl 0.1;
+model Invalid {
+    clock core = 1 GHz
+}

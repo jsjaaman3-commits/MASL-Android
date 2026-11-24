@@ -1,0 +1,32 @@
+MASL ARCHITECTURE SIMULATOR 0.10.0
+Engine: CPU
+Status: completed (deterministic trace-driven model)
+
+PERFORMANCE
+  Cycles: 834892
+  Clock: 3000000000 Hz
+  Estimated time: 278297.333 ns
+  Dynamic instructions: 4000000
+  IPC (engine instruction/cycle): 4.7910
+  Stalled cycles: 70860
+  Branch mispredictions: 16089
+  Dependency-stall core-cycles: 4193638
+  Memory-dependency core-cycles: 4175610
+  Front-end blocked core-cycles: 5022233
+
+MEMORY SYSTEM
+  Memory instructions: 959651
+  L1 cache-line requests (CPU I-fetch + data or GPU global): 2128518
+  Requested cache-line bytes: 136225152
+  DRAM transactions: 131007
+  DRAM bytes transferred: 8384448
+  L1I line accesses: 1168867, hit rate: 78.61%
+  L1D hit rate: 0.39%
+  L2 hit rate: 22.94%
+  LLC hit rate: 85.90%
+
+MODEL BOUNDARIES
+  Inclusive tag-based caches; fixed hit latencies; loads/stores share a simplified line-fill path.
+  DRAM uses independent channel queues; no row/bank/refresh timing.
+  No delayed fill merging/MSHRs, dirty writeback, cache coherence, OS noise, DVFS or measured power.
+  CPU model is bounded ROB/scoreboard; GPU model is generated warp-level SIMT.

@@ -1,0 +1,10 @@
+MASL 0.10.0 local verification summary
+Date: 2026-11-24
+Compiler: GNU C++ 14.2.0
+Language standard: C++20
+Build mode: Debug and Release
+Warnings as errors: enabled
+Portable build: successful in both configurations
+CTest: 39/39 passed in Debug; 39/39 passed in Release
+Android APK: NOT BUILT in this environment (Android SDK/NDK/Gradle are not installed and external DNS is unavailable)
+GitHub: connected account currently reports zero accessible repositories and zero GitHub App installations; write operations are unavailable.

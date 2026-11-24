@@ -1,0 +1,56 @@
+masl 0.1;
+
+model ComponentArrayCheck {
+    clock core = 1 GHz;
+
+    record Job {
+        id: u64;
+        a: i32;
+        b: i32;
+        result: i32;
+    }
+
+    enum WorkState { state_idle, state_queued, state_running }
+
+    resource global_slots {
+        capacity = 8;
+        unit = slot;
+    }
+
+    component SM {
+        param warp_limit: u32 = 48;
+
+        input port jobs: Job;
+        output port completed: Job;
+
+        queue ready: Job {
+            capacity = 64;
+            discipline = fifo;
+            overflow = block;
+        }
+
+        resource alu_slots {
+            capacity = 1;
+            unit = slot;
+        }
+
+        pipeline alu: Job -> Job {
+            input = ready;
+            output = completed;
+            clock = core;
+            latency = 4 cycles(core);
+            initiation_interval = 1 cycles(core);
+            max_in_flight = 16;
+
+            on_start(job) {
+                set job.result = job.a + job.b;
+            }
+        }
+
+        connect jobs -> ready;
+    }
+
+    instances sms: SM[2] {
+        warp_limit = 48;
+    }
+}

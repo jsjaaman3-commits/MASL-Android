@@ -1,0 +1,9 @@
+masl 0.1;
+model SemanticInvalid {
+    record Item { value: i32; }
+    queue q: Item {
+        capacity = 0;
+        discipline = fifo;
+        overflow = block;
+    }
+}

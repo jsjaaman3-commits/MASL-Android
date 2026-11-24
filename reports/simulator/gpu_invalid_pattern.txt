@@ -1,0 +1,1 @@
+memory pattern must be coalesced, strided or random

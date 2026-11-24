@@ -1,0 +1,84 @@
+Internal ctest changing into directory: /mnt/data/masl_build_work/MASL_0.10.0/build-final-release
+Test project /mnt/data/masl_build_work/MASL_0.10.0/build-final-release
+      Start  1: masl_foundation_unit_tests
+ 1/39 Test  #1: masl_foundation_unit_tests .............   Passed    0.00 sec
+      Start  2: masl_lexer_tests
+ 2/39 Test  #2: masl_lexer_tests .......................   Passed    0.00 sec
+      Start  3: masl_parser_tests
+ 3/39 Test  #3: masl_parser_tests ......................   Passed    0.00 sec
+      Start  4: masl_semantic_tests
+ 4/39 Test  #4: masl_semantic_tests ....................   Passed    0.00 sec
+      Start  5: masl_ir_tests
+ 5/39 Test  #5: masl_ir_tests ..........................   Passed    0.00 sec
+      Start  6: masl_bytecode_tests
+ 6/39 Test  #6: masl_bytecode_tests ....................   Passed    0.00 sec
+      Start  7: masl_vm_tests
+ 7/39 Test  #7: masl_vm_tests ..........................   Passed    0.00 sec
+      Start  8: masl_runtime_tests
+ 8/39 Test  #8: masl_runtime_tests .....................   Passed    0.00 sec
+      Start  9: masl_queue_tests
+ 9/39 Test  #9: masl_queue_tests .......................   Passed    0.00 sec
+      Start 10: masl_resource_tests
+10/39 Test #10: masl_resource_tests ....................   Passed    0.00 sec
+      Start 11: masl_simulator_tests
+11/39 Test #11: masl_simulator_tests ...................   Passed    0.04 sec
+      Start 12: masl_mobile_bridge_tests
+12/39 Test #12: masl_mobile_bridge_tests ...............   Passed    0.01 sec
+      Start 13: maslc_parse_fixture
+13/39 Test #13: maslc_parse_fixture ....................   Passed    0.00 sec
+      Start 14: maslc_parse_invalid
+14/39 Test #14: maslc_parse_invalid ....................   Passed    0.00 sec
+      Start 15: maslc_ir_arithmetic_fixture
+15/39 Test #15: maslc_ir_arithmetic_fixture ............   Passed    0.00 sec
+      Start 16: maslc_ir_component_hierarchy_fixture
+16/39 Test #16: maslc_ir_component_hierarchy_fixture ...   Passed    0.00 sec
+      Start 17: maslc_ir_invalid
+17/39 Test #17: maslc_ir_invalid .......................   Passed    0.00 sec
+      Start 18: maslc_check_arithmetic_fixture
+18/39 Test #18: maslc_check_arithmetic_fixture .........   Passed    0.00 sec
+      Start 19: maslc_check_component_array_fixture
+19/39 Test #19: maslc_check_component_array_fixture ....   Passed    0.00 sec
+      Start 20: maslc_check_semantic_invalid
+20/39 Test #20: maslc_check_semantic_invalid ...........   Passed    0.00 sec
+      Start 21: maslc_lex_fixture
+21/39 Test #21: maslc_lex_fixture ......................   Passed    0.00 sec
+      Start 22: maslc_lex_invalid
+22/39 Test #22: maslc_lex_invalid ......................   Passed    0.00 sec
+      Start 23: maslc_compile_rejects_hardware_loss
+23/39 Test #23: maslc_compile_rejects_hardware_loss ....   Passed    0.01 sec
+      Start 24: maslc_compile_executable_fixture
+24/39 Test #24: maslc_compile_executable_fixture .......   Passed    0.00 sec
+      Start 25: masl_verify_masb_fixture
+25/39 Test #25: masl_verify_masb_fixture ...............   Passed    0.00 sec
+      Start 26: maslc_disasm_masb_fixture
+26/39 Test #26: maslc_disasm_masb_fixture ..............   Passed    0.00 sec
+      Start 27: masl_run_answer_fixture
+27/39 Test #27: masl_run_answer_fixture ................   Passed    0.00 sec
+      Start 28: masl_run_sum_fixture
+28/39 Test #28: masl_run_sum_fixture ...................   Passed    0.00 sec
+      Start 29: masl_run_call_arguments_fixture
+29/39 Test #29: masl_run_call_arguments_fixture ........   Passed    0.00 sec
+      Start 30: masl_run_negative_branch_fixture
+30/39 Test #30: masl_run_negative_branch_fixture .......   Passed    0.00 sec
+      Start 31: masl_run_wrong_arguments_fixture
+31/39 Test #31: masl_run_wrong_arguments_fixture .......   Passed    0.00 sec
+      Start 32: maslsim_cpu_smoke
+32/39 Test #32: maslsim_cpu_smoke ......................   Passed    0.01 sec
+      Start 33: maslsim_gpu_smoke
+33/39 Test #33: maslsim_gpu_smoke ......................   Passed    0.00 sec
+      Start 34: maslsim_gpu_strided_smoke
+34/39 Test #34: maslsim_gpu_strided_smoke ..............   Passed    0.01 sec
+      Start 35: maslsim_version
+35/39 Test #35: maslsim_version ........................   Passed    0.00 sec
+      Start 36: maslc_version
+36/39 Test #36: maslc_version ..........................   Passed    0.00 sec
+      Start 37: masl_version
+37/39 Test #37: masl_version ...........................   Passed    0.00 sec
+      Start 38: maslc_help
+38/39 Test #38: maslc_help .............................   Passed    0.00 sec
+      Start 39: masl_help
+39/39 Test #39: masl_help ..............................   Passed    0.00 sec
+
+100% tests passed, 0 tests failed out of 39
+
+Total Test time (real) =   0.15 sec

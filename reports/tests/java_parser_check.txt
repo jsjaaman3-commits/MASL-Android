@@ -1,0 +1,621 @@
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:3: error: package android.app does not exist
+import android.app.Activity;
+                  ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:4: error: package android.graphics does not exist
+import android.graphics.Color;
+                       ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:5: error: package android.graphics does not exist
+import android.graphics.Typeface;
+                       ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:6: error: package android.os does not exist
+import android.os.Bundle;
+                 ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:7: error: package android.text does not exist
+import android.text.InputType;
+                   ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:8: error: package android.view does not exist
+import android.view.Gravity;
+                   ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:9: error: package android.view does not exist
+import android.view.View;
+                   ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:10: error: package android.view.inputmethod does not exist
+import android.view.inputmethod.InputMethodManager;
+                               ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:11: error: package android.content does not exist
+import android.content.Context;
+                      ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:12: error: package android.widget does not exist
+import android.widget.ArrayAdapter;
+                     ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:13: error: package android.widget does not exist
+import android.widget.Button;
+                     ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:14: error: package android.widget does not exist
+import android.widget.EditText;
+                     ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:15: error: package android.widget does not exist
+import android.widget.LinearLayout;
+                     ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:16: error: package android.widget does not exist
+import android.widget.ScrollView;
+                     ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:17: error: package android.widget does not exist
+import android.widget.Spinner;
+                     ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:18: error: package android.widget does not exist
+import android.widget.TextView;
+                     ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:29: error: cannot find symbol
+public final class MainActivity extends Activity {
+                                        ^
+  symbol: class Activity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:77: error: cannot find symbol
+    private EditText sourceEditor;
+            ^
+  symbol:   class EditText
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:78: error: cannot find symbol
+    private EditText functionEditor;
+            ^
+  symbol:   class EditText
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:79: error: cannot find symbol
+    private EditText argumentsEditor;
+            ^
+  symbol:   class EditText
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:80: error: cannot find symbol
+    private TextView resultView;
+            ^
+  symbol:   class TextView
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:81: error: cannot find symbol
+    private TextView statusView;
+            ^
+  symbol:   class TextView
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:82: error: cannot find symbol
+    private EditText cpuInstructionEditor;
+            ^
+  symbol:   class EditText
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:83: error: cannot find symbol
+    private EditText gpuInstructionEditor;
+            ^
+  symbol:   class EditText
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:84: error: cannot find symbol
+    private EditText gpuThreadEditor;
+            ^
+  symbol:   class EditText
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:85: error: cannot find symbol
+    private Spinner memoryPatternSpinner;
+            ^
+  symbol:   class Spinner
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:86: error: cannot find symbol
+    private final List<Button> actionButtons = new ArrayList<>();
+                       ^
+  symbol:   class Button
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:97: error: cannot find symbol
+    public void onCreate(Bundle state) {
+                         ^
+  symbol:   class Bundle
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:109: error: cannot find symbol
+    private TextView text(String value, float size, int color) {
+            ^
+  symbol:   class TextView
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:117: error: cannot find symbol
+    private LinearLayout row() {
+            ^
+  symbol:   class LinearLayout
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:124: error: cannot find symbol
+    private Button button(String label, Runnable action) {
+            ^
+  symbol:   class Button
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:137: error: cannot find symbol
+    private void addRow(LinearLayout parent, Button... buttons) {
+                        ^
+  symbol:   class LinearLayout
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:137: error: cannot find symbol
+    private void addRow(LinearLayout parent, Button... buttons) {
+                                             ^
+  symbol:   class Button
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:147: error: cannot find symbol
+    private EditText numberEditor(String value, String hint) {
+            ^
+  symbol:   class EditText
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:96: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:98: error: cannot find symbol
+        super.onCreate(state);
+        ^
+  symbol:   variable super
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:99: error: cannot find symbol
+        getWindow().setStatusBarColor(Color.rgb(16, 24, 39));
+        ^
+  symbol:   method getWindow()
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:99: error: cannot find symbol
+        getWindow().setStatusBarColor(Color.rgb(16, 24, 39));
+                                      ^
+  symbol:   variable Color
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:100: error: cannot find symbol
+        getWindow().setNavigationBarColor(Color.rgb(16, 24, 39));
+        ^
+  symbol:   method getWindow()
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:100: error: cannot find symbol
+        getWindow().setNavigationBarColor(Color.rgb(16, 24, 39));
+                                          ^
+  symbol:   variable Color
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:106: error: cannot find symbol
+        return Math.round(value * getResources().getDisplayMetrics().density);
+                                  ^
+  symbol:   method getResources()
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:110: error: cannot find symbol
+        TextView view = new TextView(this);
+        ^
+  symbol:   class TextView
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:110: error: cannot find symbol
+        TextView view = new TextView(this);
+                            ^
+  symbol:   class TextView
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:118: error: cannot find symbol
+        LinearLayout layout = new LinearLayout(this);
+        ^
+  symbol:   class LinearLayout
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:118: error: cannot find symbol
+        LinearLayout layout = new LinearLayout(this);
+                                  ^
+  symbol:   class LinearLayout
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:119: error: cannot find symbol
+        layout.setOrientation(LinearLayout.HORIZONTAL);
+                              ^
+  symbol:   variable LinearLayout
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:120: error: cannot find symbol
+        layout.setGravity(Gravity.CENTER_VERTICAL);
+                          ^
+  symbol:   variable Gravity
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:125: error: cannot find symbol
+        Button button = new Button(this);
+        ^
+  symbol:   class Button
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:125: error: cannot find symbol
+        Button button = new Button(this);
+                            ^
+  symbol:   class Button
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:130: error: package LinearLayout does not exist
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
+                    ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:130: error: package LinearLayout does not exist
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
+                                                           ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:138: error: cannot find symbol
+        LinearLayout line = row();
+        ^
+  symbol:   class LinearLayout
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:139: error: cannot find symbol
+        for (Button button : buttons) {
+             ^
+  symbol:   class Button
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:142: error: package LinearLayout does not exist
+        parent.addView(line, new LinearLayout.LayoutParams(
+                                             ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:143: error: package LinearLayout does not exist
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                            ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:144: error: package LinearLayout does not exist
+                LinearLayout.LayoutParams.WRAP_CONTENT));
+                            ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:148: error: cannot find symbol
+        EditText editor = new EditText(this);
+        ^
+  symbol:   class EditText
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:148: error: cannot find symbol
+        EditText editor = new EditText(this);
+                              ^
+  symbol:   class EditText
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:152: error: cannot find symbol
+        editor.setInputType(InputType.TYPE_CLASS_NUMBER);
+                            ^
+  symbol:   variable InputType
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:158: error: cannot find symbol
+        ScrollView page = new ScrollView(this);
+        ^
+  symbol:   class ScrollView
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:158: error: cannot find symbol
+        ScrollView page = new ScrollView(this);
+                              ^
+  symbol:   class ScrollView
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:160: error: cannot find symbol
+        page.setBackgroundColor(Color.rgb(245, 247, 251));
+                                ^
+  symbol:   variable Color
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:162: error: cannot find symbol
+        LinearLayout content = new LinearLayout(this);
+        ^
+  symbol:   class LinearLayout
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:162: error: cannot find symbol
+        LinearLayout content = new LinearLayout(this);
+                                   ^
+  symbol:   class LinearLayout
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:163: error: cannot find symbol
+        content.setOrientation(LinearLayout.VERTICAL);
+                               ^
+  symbol:   variable LinearLayout
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:167: error: cannot find symbol
+        TextView title = text("MASL Studio", 25, Color.rgb(20, 32, 52));
+        ^
+  symbol:   class TextView
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:167: error: cannot find symbol
+        TextView title = text("MASL Studio", 25, Color.rgb(20, 32, 52));
+                                                 ^
+  symbol:   variable Color
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:168: error: cannot find symbol
+        title.setTypeface(Typeface.DEFAULT_BOLD);
+                          ^
+  symbol:   variable Typeface
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:172: error: cannot find symbol
+                Color.rgb(75, 88, 108));
+                ^
+  symbol:   variable Color
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:173: error: package LinearLayout does not exist
+        LinearLayout.LayoutParams statusParams = new LinearLayout.LayoutParams(
+                    ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:173: error: package LinearLayout does not exist
+        LinearLayout.LayoutParams statusParams = new LinearLayout.LayoutParams(
+                                                                 ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:174: error: package LinearLayout does not exist
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                            ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:175: error: package LinearLayout does not exist
+                LinearLayout.LayoutParams.WRAP_CONTENT);
+                            ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:179: error: cannot find symbol
+        TextView sourceLabel = text("MASL source", 15,
+        ^
+  symbol:   class TextView
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:180: error: cannot find symbol
+                Color.rgb(25, 41, 66));
+                ^
+  symbol:   variable Color
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:181: error: cannot find symbol
+        sourceLabel.setTypeface(Typeface.DEFAULT_BOLD);
+                                ^
+  symbol:   variable Typeface
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:184: error: cannot find symbol
+        sourceEditor = new EditText(this);
+                           ^
+  symbol:   class EditText
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:185: error: cannot find symbol
+        sourceEditor.setGravity(Gravity.TOP | Gravity.START);
+                                ^
+  symbol:   variable Gravity
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:185: error: cannot find symbol
+        sourceEditor.setGravity(Gravity.TOP | Gravity.START);
+                                              ^
+  symbol:   variable Gravity
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:186: error: cannot find symbol
+        sourceEditor.setTypeface(Typeface.MONOSPACE);
+                                 ^
+  symbol:   variable Typeface
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:188: error: cannot find symbol
+        sourceEditor.setTextColor(Color.rgb(27, 37, 53));
+                                  ^
+  symbol:   variable Color
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:190: error: cannot find symbol
+        sourceEditor.setInputType(InputType.TYPE_CLASS_TEXT |
+                                  ^
+  symbol:   variable InputType
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:191: error: cannot find symbol
+                InputType.TYPE_TEXT_FLAG_MULTI_LINE |
+                ^
+  symbol:   variable InputType
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:192: error: cannot find symbol
+                InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS);
+                ^
+  symbol:   variable InputType
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:197: error: cannot find symbol
+        sourceEditor.setBackgroundColor(Color.WHITE);
+                                        ^
+  symbol:   variable Color
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:198: error: package LinearLayout does not exist
+        LinearLayout.LayoutParams editorParams = new LinearLayout.LayoutParams(
+                    ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:198: error: package LinearLayout does not exist
+        LinearLayout.LayoutParams editorParams = new LinearLayout.LayoutParams(
+                                                                 ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:199: error: package LinearLayout does not exist
+                LinearLayout.LayoutParams.MATCH_PARENT, dp(330));
+                            ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:219: error: cannot find symbol
+        TextView runLabel = text("Run a compiled function", 15,
+        ^
+  symbol:   class TextView
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:220: error: cannot find symbol
+                Color.rgb(25, 41, 66));
+                ^
+  symbol:   variable Color
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:221: error: cannot find symbol
+        runLabel.setTypeface(Typeface.DEFAULT_BOLD);
+                             ^
+  symbol:   variable Typeface
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:222: error: package LinearLayout does not exist
+        LinearLayout.LayoutParams runLabelParams = new LinearLayout.LayoutParams(
+                    ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:222: error: package LinearLayout does not exist
+        LinearLayout.LayoutParams runLabelParams = new LinearLayout.LayoutParams(
+                                                                   ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:223: error: package LinearLayout does not exist
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                            ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:224: error: package LinearLayout does not exist
+                LinearLayout.LayoutParams.WRAP_CONTENT);
+                            ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:228: error: cannot find symbol
+        functionEditor = new EditText(this);
+                             ^
+  symbol:   class EditText
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:235: error: cannot find symbol
+        argumentsEditor = new EditText(this);
+                              ^
+  symbol:   class EditText
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:242: error: cannot find symbol
+        TextView outputLabel = text("Output", 15, Color.rgb(25, 41, 66));
+        ^
+  symbol:   class TextView
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:242: error: cannot find symbol
+        TextView outputLabel = text("Output", 15, Color.rgb(25, 41, 66));
+                                                  ^
+  symbol:   variable Color
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:243: error: cannot find symbol
+        outputLabel.setTypeface(Typeface.DEFAULT_BOLD);
+                                ^
+  symbol:   variable Typeface
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:244: error: package LinearLayout does not exist
+        LinearLayout.LayoutParams outputLabelParams = new LinearLayout.LayoutParams(
+                    ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:244: error: package LinearLayout does not exist
+        LinearLayout.LayoutParams outputLabelParams = new LinearLayout.LayoutParams(
+                                                                      ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:245: error: package LinearLayout does not exist
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                            ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:246: error: package LinearLayout does not exist
+                LinearLayout.LayoutParams.WRAP_CONTENT);
+                            ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:251: error: cannot find symbol
+                12, Color.rgb(223, 231, 243));
+                    ^
+  symbol:   variable Color
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:252: error: cannot find symbol
+        resultView.setTypeface(Typeface.MONOSPACE);
+                               ^
+  symbol:   variable Typeface
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:255: error: cannot find symbol
+        resultView.setBackgroundColor(Color.rgb(20, 29, 44));
+                                      ^
+  symbol:   variable Color
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:256: error: package LinearLayout does not exist
+        LinearLayout.LayoutParams resultParams = new LinearLayout.LayoutParams(
+                    ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:256: error: package LinearLayout does not exist
+        LinearLayout.LayoutParams resultParams = new LinearLayout.LayoutParams(
+                                                                 ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:257: error: package LinearLayout does not exist
+                LinearLayout.LayoutParams.MATCH_PARENT, dp(210));
+                            ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:261: error: cannot find symbol
+        TextView simulatorLabel = text("CPU / GPU architecture simulator", 17,
+        ^
+  symbol:   class TextView
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:262: error: cannot find symbol
+                Color.rgb(25, 41, 66));
+                ^
+  symbol:   variable Color
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:263: error: cannot find symbol
+        simulatorLabel.setTypeface(Typeface.DEFAULT_BOLD);
+                                   ^
+  symbol:   variable Typeface
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:264: error: package LinearLayout does not exist
+        LinearLayout.LayoutParams simulatorLabelParams = new LinearLayout.LayoutParams(
+                    ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:264: error: package LinearLayout does not exist
+        LinearLayout.LayoutParams simulatorLabelParams = new LinearLayout.LayoutParams(
+                                                                         ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:265: error: package LinearLayout does not exist
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                            ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:266: error: package LinearLayout does not exist
+                LinearLayout.LayoutParams.WRAP_CONTENT);
+                            ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:278: error: cannot find symbol
+        TextView patternLabel = text("GPU memory access pattern", 13,
+        ^
+  symbol:   class TextView
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:279: error: cannot find symbol
+                Color.rgb(75, 88, 108));
+                ^
+  symbol:   variable Color
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:281: error: cannot find symbol
+        memoryPatternSpinner = new Spinner(this);
+                                   ^
+  symbol:   class Spinner
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:283: error: cannot find symbol
+        ArrayAdapter<String> patternAdapter = new ArrayAdapter<>(this,
+        ^
+  symbol:   class ArrayAdapter
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:283: error: cannot find symbol
+        ArrayAdapter<String> patternAdapter = new ArrayAdapter<>(this,
+                                                  ^
+  symbol:   class ArrayAdapter
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:284: error: package android.R does not exist
+                android.R.layout.simple_spinner_item, patterns);
+                         ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:286: error: package android.R does not exist
+                android.R.layout.simple_spinner_dropdown_item);
+                         ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:291: error: cannot find symbol
+        TextView simulatorHelp = text(
+        ^
+  symbol:   class TextView
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:295: error: cannot find symbol
+                11, Color.rgb(89, 101, 120));
+                    ^
+  symbol:   variable Color
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:299: error: cannot find symbol
+        TextView note = text(
+        ^
+  symbol:   class TextView
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:303: error: cannot find symbol
+                11, Color.rgb(89, 101, 120));
+                    ^
+  symbol:   variable Color
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:320: error: cannot find symbol
+        File saved = new File(getFilesDir(), SOURCE_FILE);
+                              ^
+  symbol:   method getFilesDir()
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:333: error: cannot find symbol
+        View focused = getCurrentFocus();
+        ^
+  symbol:   class View
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:333: error: cannot find symbol
+        View focused = getCurrentFocus();
+                       ^
+  symbol:   method getCurrentFocus()
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:335: error: cannot find symbol
+            InputMethodManager manager = (InputMethodManager)
+            ^
+  symbol:   class InputMethodManager
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:335: error: cannot find symbol
+            InputMethodManager manager = (InputMethodManager)
+                                          ^
+  symbol:   class InputMethodManager
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:336: error: cannot find symbol
+                    getSystemService(Context.INPUT_METHOD_SERVICE);
+                                     ^
+  symbol:   variable Context
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:345: error: cannot find symbol
+        for (Button button : actionButtons) {
+             ^
+  symbol:   class Button
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:364: error: cannot find symbol
+            runOnUiThread(() -> {
+            ^
+  symbol:   method runOnUiThread(()->{ appe[...]e); })
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:386: error: cannot find symbol
+            File file = new File(getFilesDir(), SOURCE_FILE);
+                                 ^
+  symbol:   method getFilesDir()
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:397: error: cannot find symbol
+            File file = new File(getFilesDir(), SOURCE_FILE);
+                                 ^
+  symbol:   method getFilesDir()
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:414: error: cannot find symbol
+                runOnUiThread(() -> sourceEditor.setText(loaded));
+                ^
+  symbol:   method runOnUiThread(()->source[...]aded))
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:429: error: cannot find symbol
+            File file = new File(getFilesDir(), BYTECODE_FILE);
+                                 ^
+  symbol:   method getFilesDir()
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:453: error: cannot find symbol
+            File file = new File(getFilesDir(), BYTECODE_FILE);
+                                 ^
+  symbol:   method getFilesDir()
+  location: class MainActivity
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:514: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+android/app/src/main/java/com/mahdi/masl/MainActivity.java:517: error: cannot find symbol
+        super.onDestroy();
+        ^
+  symbol:   variable super
+  location: class MainActivity
+143 errors

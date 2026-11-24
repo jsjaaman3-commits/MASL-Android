@@ -1,0 +1,57 @@
+masl 0.1;
+
+model ArithmeticPipeline {
+    clock core = 1 GHz;
+
+    record Job {
+        id: u64;
+        a: i32;
+        b: i32;
+        result: i32;
+    }
+
+    queue incoming: Job {
+        capacity = 32;
+        discipline = fifo;
+        overflow = block;
+    }
+
+    queue output: Job {
+        capacity = 32;
+        discipline = fifo;
+        overflow = block;
+    }
+
+    pipeline alu: Job -> Job {
+        input = incoming;
+        output = output;
+        clock = core;
+        latency = 3 cycles(core);
+        initiation_interval = 1 cycles(core);
+        max_in_flight = 8;
+        on_start(job) {
+            set job.result = job.a + job.b;
+        }
+    }
+
+    workload demo {
+        repeat 16 as i {
+            submit incoming, Job {
+                id = i;
+                a = i;
+                b = i * 2;
+                result = 0;
+            };
+        }
+    }
+
+    experiment baseline {
+        workload = demo;
+        mode = cycle;
+        stop_when = idle;
+        max_cycles = 1000;
+        expect completed(alu) == 16;
+        export trace = "output/trace.json";
+        export stats = "output/stats.json";
+    }
+}

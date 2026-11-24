@@ -1,0 +1,32 @@
+masl 0.1;
+
+model ExecutableFunctions {
+    fn answer() -> i32 {
+        return 6 * 7;
+    }
+
+    fn twice(value: i32) -> i32 {
+        let result: i32 = value * 2;
+        return result;
+    }
+
+    fn choose(value: i32) -> i32 {
+        if value > 0 {
+            return twice(value);
+        } else {
+            return 0;
+        }
+    }
+
+    fn sum_to() -> u64 {
+        let total: u64 = 0;
+        repeat 10 as i {
+            set total = total + i;
+        }
+        return total;
+    }
+
+    fn enabled(value: i32) -> bool {
+        return value >= 0;
+    }
+}
